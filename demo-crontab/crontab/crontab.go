@@ -1,4 +1,4 @@
-package main
+package crontab
 
 import (
 	"demo-person/demo-miniprogramme/common"

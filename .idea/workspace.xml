@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07bd8b26-98d4-4a2c-8680-02a6723d0a59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-crontab/main/crontab.go" afterDir="false" />
+    <list default="true" id="07bd8b26-98d4-4a2c-8680-02a6723d0a59" name="Default Changelist" comment="Add scheduled task demo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/common/autoCreateList.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/common/autoCreateList.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-crontab/main/crontab.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-crontab/crontab/crontab.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/homologous/dataCollect.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/homologous/dataCollect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/method/checkin.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/method/checkin.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/method/contentList.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/method/contentList.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/method/databaseServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/method/databaseServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/method/getOpenid.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/method/getOpenid.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,13 +72,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build demo-person/demo-crontab/main">
-    <configuration name="go build demo-person/demo-crontab/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build demo-person/demo-miniprogramme/homologous">
+    <configuration name="go build demo-person/demo-miniprogramme/homologous" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="demo-person" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/demo-crontab/main/crontab.go" />
-      <package value="demo-person/demo-crontab/main" />
+      <filePath value="$PROJECT_DIR$/demo-miniprogramme/homologous/dataCollect.go" />
+      <package value="demo-person/demo-miniprogramme/homologous" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -87,9 +90,13 @@
       <package value="demo-person/demo-timeTranslate/main" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Go Build.go build demo-person/demo-timeTranslate/main" />
+      <item itemvalue="Go Build.go build demo-person/demo-miniprogramme/homologous" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build demo-person/demo-crontab/main" />
+        <item itemvalue="Go Build.go build demo-person/demo-miniprogramme/homologous" />
         <item itemvalue="Go Build.go build demo-person/demo-timeTranslate/main" />
       </list>
     </recent_temporary>
@@ -114,6 +121,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/go-demo-cron/main/src/golang.org/x/net" />
     </ignored-roots>
+    <MESSAGE value="Add scheduled task demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add scheduled task demo" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
