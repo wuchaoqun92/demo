@@ -3,37 +3,36 @@ package common
 import (
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
-	"github.com/jmoiron/sqlx"
+	_ "github.com/jmoiron/sqlx"
 )
 
-
 func CreateList(title string) {
-	db,err := DatabaseConnect()
+	db, err := DatabaseConnect()
 	if err != nil {
-		fmt.Println("database connect failed,err:",err)
+		fmt.Println("database connect failed,err:", err)
 		return
 	}
 	defer db.Close()
 
-  	str := `SELECT DISTINCT code FROM list`
+	str := `SELECT DISTINCT code FROM list`
 
 	code := CommonTodo(str)
 	fmt.Println(code)
-	for _,v := range code{
-		db.Exec("INSERT INTO list (list_title,code) VALUES (?,?)",title,v)
+	for _, v := range code {
+		db.Exec("INSERT INTO list (list_title,code) VALUES (?,?)", title, v)
 	}
 
-	}
+}
 
-func DeleteList(){
-	db,err := DatabaseConnect()
+func DeleteList() {
+	db, err := DatabaseConnect()
 	if err != nil {
-		fmt.Println("database connect failed,err:",err)
+		fmt.Println("database connect failed,err:", err)
 		return
 	}
 	defer db.Close()
 
-	str :=`SELECT list_id FROM
+	str := `SELECT list_id FROM
 			(
 			SELECT a.code,a.list_id,a.list_title,b.content_id
 			FROM list a LEFT JOIN content b ON a.list_id = b.list_id
@@ -43,17 +42,16 @@ func DeleteList(){
 			ORDER BY list_id`
 
 	code := CommonTodo(str)
-	for _,v := range code{
+	for _, v := range code {
 		fmt.Println(v)
-		db.Exec("DELETE from list where list_id = ?",v)
+		db.Exec("DELETE from list where list_id = ?", v)
 	}
 }
 
-
-func CommonTodo(str string)(code []string){
-	db,err := DatabaseConnect()
+func CommonTodo(str string) (code []string) {
+	db, err := DatabaseConnect()
 	if err != nil {
-		fmt.Println("database connect failed,err:",err)
+		fmt.Println("database connect failed,err:", err)
 		return
 	}
 	defer db.Close()
@@ -63,12 +61,12 @@ func CommonTodo(str string)(code []string){
 		fmt.Println(err)
 		panic(err)
 	}
-	code = make([]string,0)
+	code = make([]string, 0)
 
 	for rows.Next() {
 		var a string
 		err = rows.Scan(&a)
-		code = append(code,a)
+		code = append(code, a)
 	}
 	fmt.Println(code)
 	return
