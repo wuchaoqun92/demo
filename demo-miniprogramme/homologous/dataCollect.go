@@ -2,11 +2,14 @@ package main
 
 import (
 	"demo-person/demo-miniprogramme/common"
+	"demo-person/demo-upload/upload"
 	"encoding/json"
+	"errors"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"
 	"sync"
+	"time"
 )
 
 func DatabaseConnect() (db *sqlx.DB, err error) {
@@ -138,15 +141,21 @@ func (content *contentInsert) CollectMsg(con string) (result []byte) {
 		fmt.Println("err:", err)
 	}
 	fmt.Println("row:", counts)
-	if counts > 0 { //list_id存在，进行插入操作
+
+	if counts == 1 { //list_id存在，进行插入操作
 		//插入数据
-		_, err = db.Exec("INSERT INTO content (list_id,user_id,title,text) VALUES (?,?,?,?)", content.ListId, content.UserId, content.Titlt, content.Text)
+		_, err = db.Exec("INSERT INTO content (list_id,user_id,title,text,create_time) VALUES (?,?,?,?,?)", content.ListId, content.UserId, content.Titlt, content.Text, time.Now().Format("2006-01-02 15:04:05"))
 		if err != nil {
 			fmt.Println("insert failed ,err is", err)
 			backMsg.Cmd = "0"
 			backMsg.Msg = fmt.Sprintf("%s", err)
 			return
 		}
+	}
+
+	if counts == 0 {
+		err = errors.New("分组标题不存在")
+		backMsg.Msg = fmt.Sprintf("%s", err)
 	}
 
 	result, err = json.Marshal(backMsg)
@@ -189,7 +198,9 @@ func main() {
 
 	y, _ := json.Marshal(x)
 
-	z := contentInsert{}
-	z.CollectMsg(string(y))
+	SendMsg(&x, string(y))
+
+	//upload.Upload("http://localhost:8888/upload","/Users/wuchaoqun/Documents/Work/缺陷跟踪/东莞第一鸡_1.mp4")
+	upload.Upload("http://localhost:8888/upload", "/Users/wuchaoqun/Documents/Work/缺陷跟踪/1m.mp4")
 
 }

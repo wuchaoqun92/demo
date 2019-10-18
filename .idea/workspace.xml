@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07bd8b26-98d4-4a2c-8680-02a6723d0a59" name="Default Changelist" comment="Add scheduled task demo">
+    <list default="true" id="07bd8b26-98d4-4a2c-8680-02a6723d0a59" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-crontab/main/crontab.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-crontab/crontab/crontab.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-miniprogramme/homologous/dataCollect.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/homologous/dataCollect.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-miniprogramme/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/method/checkin.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/method/checkin.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/method/contentList.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/method/contentList.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/method/databaseServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/method/databaseServer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/method/getOpenid.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/method/getOpenid.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +53,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="diff.base" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -72,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build demo-person/demo-miniprogramme/homologous">
+  <component name="RunManager" selected="Go Build.readfile.go">
     <configuration name="go build demo-person/demo-miniprogramme/homologous" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="demo-person" />
       <working_directory value="$PROJECT_DIR$" />
@@ -90,7 +85,29 @@
       <package value="demo-person/demo-timeTranslate/main" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="demo-person" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
+      <filePath value="$PROJECT_DIR$/" />
+      <package value="demo-person" />
+      <directory value="$PROJECT_DIR$/demo-miniprogramme/main" />
+      <method v="2" />
+    </configuration>
+    <configuration name="readfile.go" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="demo-person" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/demo-upload/readfile/readfile.go" />
+      <package value="demo-person" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Go Build.main" />
+      <item itemvalue="Go Build.readfile.go" />
       <item itemvalue="Go Build.go build demo-person/demo-timeTranslate/main" />
       <item itemvalue="Go Build.go build demo-person/demo-miniprogramme/homologous" />
     </list>
@@ -103,6 +120,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -122,7 +149,8 @@
       <path value="$PROJECT_DIR$/go-demo-cron/main/src/golang.org/x/net" />
     </ignored-roots>
     <MESSAGE value="Add scheduled task demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add scheduled task demo" />
+    <MESSAGE value="Packet switching" />
+    <option name="LAST_COMMIT_MESSAGE" value="Packet switching" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
