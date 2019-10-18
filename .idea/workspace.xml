@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07bd8b26-98d4-4a2c-8680-02a6723d0a59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/homologous/dataCollect.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/homologous/dataCollect.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/main/main.go" afterDir="false" />
-    </list>
+    <list default="true" id="07bd8b26-98d4-4a2c-8680-02a6723d0a59" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +146,8 @@
     </ignored-roots>
     <MESSAGE value="Add scheduled task demo" />
     <MESSAGE value="Packet switching" />
-    <option name="LAST_COMMIT_MESSAGE" value="Packet switching" />
+    <MESSAGE value="New Patch uploading" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Patch uploading" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
