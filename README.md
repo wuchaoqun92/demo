@@ -1,6 +1,6 @@
 Own practice demo
 
-miniProgramme : 个人小程序后台相关内容，为http数据交互相关联系
+miniProgramme : 个人小程序后台相关内容，为http数据交互相关练习
 
 timeTranslate : 时间格式转化为中文练习
 
