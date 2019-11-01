@@ -6,6 +6,8 @@ require (
 	github.com/go-sql-driver/mysql v1.4.1
 	github.com/jmoiron/sqlx v1.2.0
 	github.com/robfig/cron v1.2.0
+	github.com/tencentcloud/tencentcloud-sdk-go v3.0.94+incompatible
+	github.com/unidoc/unioffice v1.2.1
 	google.golang.org/appengine v1.6.5 // indirect
 )
 

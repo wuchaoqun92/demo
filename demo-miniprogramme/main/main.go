@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"bytes"
 	"demo-person/demo-miniprogramme/method"
+	"demo-person/demo-reptile/fromDocument"
 	"fmt"
 	"io/ioutil"
 	"log"
@@ -18,6 +19,7 @@ func main() {
 	http.HandleFunc("/GetContentList", Panics(method.ChoiceMethodToList))
 
 	http.HandleFunc("/upload", Panics(download))
+	http.HandleFunc("/test", Panics(fromDocument.Main2))
 
 	err := http.ListenAndServe(":8888", nil)
 	fmt.Println("shshshshshs", err)
