@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07bd8b26-98d4-4a2c-8680-02a6723d0a59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-    </list>
+    <list default="true" id="07bd8b26-98d4-4a2c-8680-02a6723d0a59" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +225,8 @@
     <MESSAGE value="Add scheduled task demo" />
     <MESSAGE value="Packet switching" />
     <MESSAGE value="New Patch uploading" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Patch uploading" />
+    <MESSAGE value="New docx parse" />
+    <option name="LAST_COMMIT_MESSAGE" value="New docx parse" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
