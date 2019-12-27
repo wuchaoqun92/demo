@@ -6,24 +6,22 @@
     </enabled-run-configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07bd8b26-98d4-4a2c-8680-02a6723d0a59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-OpenApiTest/TransBaidu/Translate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-OpenApiTest/TransBaidu/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-OpenApiTest/TransBaidu/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-OpenApiTest/imageRecognitionBaidu/httpCommonTest.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-OpenApiTest/imageRecognitionBaidu/httpCommonTest.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-OpenApiTest/imageRecognitionBaidu/imageEncode/imageEncode.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-OpenApiTest/imageRecognitionBaidu/imageEncode/imageEncode.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-OpenApiTest/imageRecognitionBaidu/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-OpenApiTest/imageRecognitionBaidu/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-OpenApiTest/imageRecognitionBaidu/token/getToken.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-OpenApiTest/imageRecognitionBaidu/token/getToken.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-httpCommon/netRequest/netRequest.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-httpCommon/netRequest/netRequest.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/method/contentList.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/method/contentList.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/method/databaseServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/method/databaseServer.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-reptile/fromDocument/gorountineToHandle.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-reptile/fromDocument/gorountineToHandle.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-reptile/fromWebpage/fromWebpage.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-reptile/fromWebpage/fromWebpage.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+    <list default="true" id="07bd8b26-98d4-4a2c-8680-02a6723d0a59" name="Default Changelist" comment="Change face recognition">
+      <change afterPath="$PROJECT_DIR$/demo-Iris/1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-Iris/2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-OpenApiTest/faceRecognition/faceRecog/SmallComponents/callBaiduApi.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-OpenApiTest/faceRecognition/faceRecog/SmallComponents/imageProcess.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-OpenApiTest/faceRecognition/faceRecog/SmallComponents/resultUnmarshal.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-OpenApiTest/faceRecognition/faceRecog/SmallComponents/stackTry.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-OpenApiTest/faceRecognition/faceRecog/faceRecog.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-goframe/1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-goframe/C/ffmpeg.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-goframe/C/ffmpeg.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-goframe/C/ffmpeg.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-imageProcess/compress/compress.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-imageProcess/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-reptile/fromDocument/goHandle_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-reptile/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -354,7 +352,8 @@
     <MESSAGE value="Packet switching" />
     <MESSAGE value="New Patch uploading" />
     <MESSAGE value="New docx parse" />
-    <option name="LAST_COMMIT_MESSAGE" value="New docx parse" />
+    <MESSAGE value="Change face recognition" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change face recognition" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
