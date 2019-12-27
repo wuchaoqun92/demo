@@ -9,8 +9,8 @@ import (
 )
 
 const (
-	Api_key     = "Thi7PO5FmH1e7LkA88KXWL8P"
-	Secret_key  = "your secret_key "
+	Api_key     = "your api_key"
+	Secret_key  = "your secret_key"
 	Request_url = "https://aip.baidubce.com/oauth/2.0/token"
 )
 

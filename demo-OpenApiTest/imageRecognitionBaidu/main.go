@@ -20,7 +20,7 @@ func main() {
 	//	}
 	//}
 	token := "you access_token"
-	bytes := imageEncode.LoadImage("/Users/wuchaoqun/Desktop/1.jpg")
+	bytes, _ := imageEncode.LoadImage("/Users/wuchaoqun/Desktop/1.jpg")
 	_, image_value := imageEncode.ImageEncodeToBase64(bytes)
 	getResult(token, image_value)
 	//fmt.Println(token,base64code)

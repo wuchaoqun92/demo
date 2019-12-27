@@ -6,6 +6,7 @@ import (
 	"errors"
 	"fmt"
 	"io"
+	"log"
 	"net/http"
 )
 
@@ -60,9 +61,19 @@ func ChoiceMethodToList(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	da, err := json.Marshal(list)
-	fmt.Println("back data is", string(da))
-	dataBack, _ := Backmsg.WriteMsg("1", "获取数据成功", string(da))
+	//var dataBack string
+	dataBack, _ := Backmsg.WriteMsg("1", "插入数据成功")
+
+	if list != nil {
+		da, err := json.Marshal(list)
+		if err != nil {
+			fmt.Println("backData list marshal failed , err is", err)
+			return
+		}
+		fmt.Println("back data is", string(da))
+		dataBack, _ = Backmsg.WriteMsg("1", "获取数据成功", string(da))
+	}
+
 	io.WriteString(w, dataBack)
 
 }
@@ -114,6 +125,12 @@ func InsertConDetail(MsgData string) (err error) {
 	err = json.Unmarshal([]byte(MsgData), &contentDatail)
 	if err != nil {
 		fmt.Println("receive to insert data unmarshal failed", err)
+		return
+	}
+
+	err = InsertContent(contentDatail.Title, contentDatail.CreateTime, contentDatail.Text, contentDatail.Author)
+	if err != nil {
+		log.Println("insert data faile,err is", err)
 		return
 	}
 

@@ -182,7 +182,7 @@ func languageCheck(q string) (res string) {
 	languages := language{}
 	err = json.Unmarshal(bytes, &languages)
 	if err != nil {
-		fmt.Println("ummaishal failed,err is", err)
+		fmt.Println("ummarshal failed,err is", err)
 		return
 	}
 	//fmt.Println(string(res))

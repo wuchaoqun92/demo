@@ -4,12 +4,36 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
-	"os"
 	"regexp"
 	"strings"
 )
 
 func main() {
+
+	test2()
+
+}
+func test2() {
+	resp, err := http.Get("https://mp.weixin.qq.com/s/I2XbTrYkfjGEfqSnhHFB3g")
+	if err != nil {
+		fmt.Println("get picture failed,err is", err)
+		return
+	}
+	by, _ := ioutil.ReadAll(resp.Body)
+	defer resp.Body.Close()
+
+	commentCount := `<div id="img-content"><h2.*?</div> ` //`<h2 class="rich_media_title" id="activity-name">([^<]+)</h2>`
+	reg := regexp.MustCompile(commentCount)
+
+	//fmt.Println(string(by))
+
+	for i, d := range reg.FindAllString(string(by), -1) {
+		fmt.Println(i, d)
+	}
+
+}
+
+func test1() {
 	resp, err := http.Get("https://mp.weixin.qq.com/s/F6Hao3sL8UGDmRI6BXskCQ")
 	if err != nil {
 		fmt.Println("get picture failed,err is", err)
@@ -17,21 +41,12 @@ func main() {
 	}
 	by, _ := ioutil.ReadAll(resp.Body)
 	defer resp.Body.Close()
-	//fmt.Println(string(by))
 
-	file, err := os.Create("/Users/wuchaoqun/Desktop/x.html")
-	defer file.Close()
-	//n,_ :=file.Write(by)
-	//fmt.Println("sucess,write len:",n)
-
-	commentCount := `<span style="(.*?)">(.*?)</span>`
-	//commentCount := `meta name="(.*?)" content="(.*?)"`
+	commentCount := `<span (.*?)>(.*?)</span>`
 	reg := regexp.MustCompile(commentCount)
-	//txt2 := rp2.FindAllString(string(by), -1)
-	//fmt.Println(txt2)
+
 	res := make([]string, 0)
 	for _, d := range reg.FindAllString(string(by), -1) {
-		//fmt.Println(i,d)
 		n := Utf8Index(d, ">")
 		res = append(res, d[n:])
 
@@ -42,7 +57,7 @@ func main() {
 	for i, v := range res {
 		//fmt.Println(v)
 		a := strings.ReplaceAll(v, "><strong>", "小标题：")
-		d := strings.ReplaceAll(a, "</strong></span>", "")
+		d := strings.ReplaceAll(a, "</strong></span(.*?)>", "")
 		e := strings.ReplaceAll(d, "</span>", "")
 		//b := strings.ReplaceAll(e,">","正文：")
 		res1[i] = e
@@ -56,7 +71,6 @@ func main() {
 		fmt.Println(v)
 		//strings.ReplaceAll(v,">","正文")
 	}
-
 }
 
 //获取字符在字符串中的位置

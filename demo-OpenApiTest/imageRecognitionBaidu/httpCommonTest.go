@@ -37,7 +37,7 @@ func main() {
 	token := access_token
 	requestUrl := car_url + token
 
-	image_byte := imageEncode.LoadImage("/Users/wuchaoqun/Desktop/1.jpg")
+	image_byte, _ := imageEncode.LoadImage("/Users/wuchaoqun/Desktop/1.jpg")
 	image_value := base64.StdEncoding.EncodeToString(image_byte)
 
 	header := make(map[string]string, 0)

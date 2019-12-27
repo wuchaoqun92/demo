@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"net/url"
+	"reflect"
 	"strings"
 )
 
@@ -19,19 +20,35 @@ func GetRequest(url string) (result []byte) {
 	return
 }
 
-func PostRequest(surl string, header, body map[string]string) (result []byte) {
+func PostRequest(surl string, header map[string]string, body interface{}) (result []byte) {
 
 	client := http.Client{}
+	requestBody := &strings.Reader{}
 
-	value := url.Values{}
-	if body != nil {
-		for k, v := range body {
-			url_v, _ := url.Parse(v)          //字符串转化为url指针
-			value.Add(k, url_v.EscapedPath()) //url指针转化为字符串后加入请求体中
+	switch body.(type) {
+	case map[string]string:
+		value := url.Values{}
+		val := reflect.ValueOf(body).MapRange()
+		for val.Next() {
+			value.Add(val.Key().String(), val.Value().String())
 		}
+		requestBody = strings.NewReader(value.Encode())
+	case string:
+		requestBody = strings.NewReader(reflect.ValueOf(body).String())
+	case []byte:
+		requestBody = strings.NewReader(string(reflect.ValueOf(body).Bytes()))
+	default:
+		requestBody = strings.NewReader("")
+		log.Println("Unsupported type，body is empty")
 	}
-
-	requestBody := strings.NewReader(value.Encode())
+	//初始 body 为 map，为了更加通用将 map 换成 interface{}
+	//if body != nil {
+	//	for k, v := range body{
+	//		//url_v, _ := url.Parse(v)          //字符串转化为url指针
+	//		value.Add(k, v)
+	//		//url_v.EscapedPath() //url指针转化为字符串后加入请求体中
+	//	}
+	//}
 
 	request, err := http.NewRequest("POST", surl, requestBody)
 	if err != nil {

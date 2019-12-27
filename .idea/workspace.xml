@@ -1,12 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoTestManager">
+    <enabled-run-configurations>
+      <run-configuration type="GoTestRunConfiguration" name="Benchmark in demo-person/demo-reptile/fromDocument" />
+    </enabled-run-configurations>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="07bd8b26-98d4-4a2c-8680-02a6723d0a59" name="Default Changelist" comment="New docx parse" />
+    <list default="true" id="07bd8b26-98d4-4a2c-8680-02a6723d0a59" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-OpenApiTest/TransBaidu/Translate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-OpenApiTest/TransBaidu/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-OpenApiTest/TransBaidu/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-OpenApiTest/imageRecognitionBaidu/httpCommonTest.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-OpenApiTest/imageRecognitionBaidu/httpCommonTest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-OpenApiTest/imageRecognitionBaidu/imageEncode/imageEncode.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-OpenApiTest/imageRecognitionBaidu/imageEncode/imageEncode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-OpenApiTest/imageRecognitionBaidu/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-OpenApiTest/imageRecognitionBaidu/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-OpenApiTest/imageRecognitionBaidu/token/getToken.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-OpenApiTest/imageRecognitionBaidu/token/getToken.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-httpCommon/netRequest/netRequest.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-httpCommon/netRequest/netRequest.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/method/contentList.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/method/contentList.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-miniprogramme/method/databaseServer.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-miniprogramme/method/databaseServer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-reptile/fromDocument/gorountineToHandle.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-reptile/fromDocument/gorountineToHandle.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-reptile/fromWebpage/fromWebpage.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-reptile/fromWebpage/fromWebpage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="156" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="miniProgram" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="miniProgram" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="FavoritesManager">
     <favorites_list name="demo-person" />
@@ -19,7 +69,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="$USER_HOME$/sdk/go1.13.3" />
+  <component name="GOROOT" path="$USER_HOME$/sdk/go1.13.5" />
   <component name="Git.Settings">
     <option name="ADD_SUFFIX_TO_CHERRY_PICKS_OF_PUBLISHED_COMMITS" value="false" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,9 +91,13 @@
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/demo-Iris/1.go" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="1SHEacjuU6uK5m4gEqqVPDEYtSc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultGoTemplateProperty" value="Go Application" />
     <property name="GO_FMT" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -57,6 +111,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/demo-OpenApiTest/faceRecognition/faceRecog/SmallComponents" />
       <recent name="$PROJECT_DIR$/demo-OpenApiTest/imageRecognitionBaidu" />
     </key>
   </component>
@@ -72,7 +127,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.miniProgramme">
+  <component name="RunManager" selected="Go Build.Iris">
+    <configuration name="Cgo" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="demo-person" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/demo-goframe/C/ffmpeg.go" />
+      <package value="demo-person/demo-goframe/C" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Iris-test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="demo-person" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/demo-Iris/2.go" />
+      <package value="demo-person/demo-Iris" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Iris" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="demo-person" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/demo-Iris/1.go" />
+      <package value="demo-person" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="Translate" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="demo-person" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -85,12 +168,22 @@
       <output_directory value="$PROJECT_DIR$/demo-OpenApiTest/TransBaidu" />
       <method v="2" />
     </configuration>
-    <configuration name="fromDocument" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <configuration name="compress" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="demo-person" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/demo-reptile/fromDocument/fromDocument.go" />
+      <filePath value="$PROJECT_DIR$/demo-imageProcess/compress/compress.go" />
+      <package value="demo-person" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="faceRecog" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="demo-person" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/demo-OpenApiTest/faceRecognition/faceRecog/faceRecog.go" />
       <package value="demo-person" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -105,21 +198,13 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build demo-person/demo-miniprogramme/homologous" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="goFrame" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="demo-person" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/demo-miniprogramme/homologous/dataCollect.go" />
-      <package value="demo-person/demo-miniprogramme/homologous" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/demo-goframe/1.go" />
       <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build demo-person/demo-timeTranslate/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="demo-person" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/demo-timeTranslate/main/main.go" />
-      <package value="demo-person/demo-timeTranslate/main" />
       <method v="2" />
     </configuration>
     <configuration name="gorountineToHandle" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -159,6 +244,7 @@
       <filePath value="$PROJECT_DIR$/" />
       <package value="demo-person" />
       <directory value="$PROJECT_DIR$/demo-miniprogramme/main" />
+      <output_directory value="$USER_HOME$/Desktop" />
       <method v="2" />
     </configuration>
     <configuration name="readfile.go" type="GoApplicationRunConfiguration" factoryName="Go Application">
@@ -171,25 +257,67 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="test-fromDocument" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="demo-person" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/demo-reptile/main.go" />
+      <package value="demo-person" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Benchmark in demo-person/demo-reptile/fromDocument" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="demo-person" />
+      <working_directory value="$PROJECT_DIR$/demo-reptile/fromDocument" />
+      <framework value="gobench" />
+      <kind value="PACKAGE" />
+      <package value="demo-person/demo-reptile/fromDocument" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^Benchmark$" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.miniProgramme" />
       <item itemvalue="Go Build.readfile.go" />
       <item itemvalue="Go Build.Translate" />
       <item itemvalue="Go Build.imageRecognition" />
       <item itemvalue="Go Build.fromWebpage" />
-      <item itemvalue="Go Build.fromDocument" />
+      <item itemvalue="Go Build.test-fromDocument" />
       <item itemvalue="Go Build.gorountineToHandle" />
-      <item itemvalue="Go Build.go build demo-person/demo-timeTranslate/main" />
-      <item itemvalue="Go Build.go build demo-person/demo-miniprogramme/homologous" />
+      <item itemvalue="Go Build.compress" />
+      <item itemvalue="Go Build.faceRecog" />
+      <item itemvalue="Go Build.Iris" />
+      <item itemvalue="Go Build.goFrame" />
       <item itemvalue="Go Build.imageRecognitionTencent" />
+      <item itemvalue="Go Build.Iris-test" />
+      <item itemvalue="Go Build.Cgo" />
+      <item itemvalue="Go Test.Benchmark in demo-person/demo-reptile/fromDocument" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.Cgo" />
+        <item itemvalue="Go Build.Iris-test" />
+        <item itemvalue="Go Test.Benchmark in demo-person/demo-reptile/fromDocument" />
         <item itemvalue="Go Build.imageRecognitionTencent" />
-        <item itemvalue="Go Build.go build demo-person/demo-miniprogramme/homologous" />
-        <item itemvalue="Go Build.go build demo-person/demo-timeTranslate/main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@37679a81" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -230,7 +358,7 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-    <proxy>direct</proxy>
+    <proxy>https://goproxy.io</proxy>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -247,15 +375,20 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/demo-reptile/fromDocument/fromDocument.go</url>
-          <line>77</line>
+          <line>72</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/demo-reptile/fromDocument/fromDocument.go</url>
-          <line>78</line>
+          <line>73</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/demo_person$TestAA_in_demo_person_demo_reptile_fromDocument.out" NAME="TestAA in demo-person/demo-reptile/fromDocument Coverage Results" MODIFIED="1574143240867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/demo_person$Benchmark_in_demo_person_demo_reptile_fromDocument.out" NAME="Benchmark in demo-person/demo-reptile/fromDocument Coverage Results" MODIFIED="1574672867398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/demo_person$TestImageCompression_in_demo_person_demo_reptile_fromDocument.out" NAME="TestImageCompression in demo-person/demo-reptile/fromDocument Coverage Results" MODIFIED="1574135935973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="GoCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

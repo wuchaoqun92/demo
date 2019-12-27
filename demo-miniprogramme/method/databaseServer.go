@@ -129,9 +129,9 @@ func GetContentDetailFromDatabase(content_id string) (list []Content) {
 	return
 }
 
-func InsertContent() (err error) {
+func InsertContent(title, createTime, text string, userid int) (err error) {
 
-	_, err = db.Exec("INSERT INTO content (title,userid,createTime,text) VALUES (?,?,?)", 100, "wuchaoqun", 18)
+	_, err = db.Exec("INSERT INTO content (title,userid,createTime,text) VALUES (?,?,?,?)", title, userid, createTime, text)
 
 	return
 }
