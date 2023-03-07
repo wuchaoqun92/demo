@@ -24,7 +24,7 @@ require (
 	github.com/smartystreets/goconvey v1.6.4 // indirect
 	github.com/tencentcloud/tencentcloud-sdk-go v3.0.94+incompatible
 	github.com/unidoc/unioffice v1.2.1
-	github.com/valyala/fasthttp v1.6.0 // indirect
+	github.com/valyala/fasthttp v1.34.0 // indirect
 	github.com/xeipuuv/gojsonschema v1.2.0 // indirect
 	github.com/yalp/jsonpath v0.0.0-20180802001716-5cc68e5049a0 // indirect
 	github.com/yudai/gojsondiff v1.0.0 // indirect
